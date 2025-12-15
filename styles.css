@@ -1,0 +1,76 @@
+/* Basic CSS for Elgin Styles site - separated stylesheet */
+:root{
+  --bg:#fbfbfb;
+  --surface:#ffffff;
+  --accent:#b03e5f;
+  --muted:#667085;
+  --max-width:1100px;
+  --radius:8px;
+  --container-padding:1rem;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:calc(var(--container-padding) * 1.25);
+}
+.site-header{
+  background:var(--surface);
+  border-bottom:1px solid #eef2f7;
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.125rem}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{color:var(--muted);text-decoration:none}
+.main-nav a:hover{color:#111}
+
+.hero{
+  background:linear-gradient(180deg, rgba(176,62,95,0.06), transparent 60%);
+  padding:3.5rem 0;
+  text-align:center;
+}
+.hero h1{font-size:2rem;margin:0 0 .5rem}
+.lead{color:var(--muted);margin:0 0 1rem}
+.cta{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:999px;text-decoration:none}
+
+.services{padding:2rem 0}
+.services header h2{margin:0 0 .25rem}
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;padding:0;margin:1rem 0;list-style:none}
+.service-list li{background:var(--surface);border-radius:var(--radius);padding:1rem;border:1px solid #eef2f7}
+
+.gallery .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.gallery figure{margin:0;background:var(--surface);border-radius:8px;overflow:hidden;border:1px solid #edf2f7}
+.gallery img{display:block;width:100%;height:auto}
+.gallery figcaption{padding:.5rem .75rem;color:var(--muted);font-size:.95rem}
+
+.contact{padding:2rem 0}
+.contact-form{display:block;background:var(--surface);padding:1rem;border-radius:8px;border:1px solid #eef2f7}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-grid label{display:block;font-size:.9rem}
+.form-grid label span{display:block;margin-bottom:.35rem;color:var(--muted)}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:.5rem;border:1px solid #e6e9ef;border-radius:6px;background:white}
+.form-grid label.full{grid-column:1/-1}
+.form-actions{display:flex;align-items:center;gap:1rem;margin-top:1rem}
+.form-actions button{background:var(--accent);color:#fff;border:none;padding:.6rem 1rem;border-radius:6px;cursor:pointer}
+.form-actions .hint{color:var(--muted);font-size:.85rem}
+
+.clinic-info{margin-top:1rem;font-size:.95rem;color:var(--muted)}
+
+.site-footer{padding:1rem 0;background:transparent;border-top:1px solid #f1f5f9}
+.site-footer p{margin:0;color:var(--muted);text-align:center}
+
+@media (max-width:700px){
+  .form-grid{grid-template-columns:1fr}
+  .main-nav ul{display:none}
+  .hero h1{font-size:1.5rem}
+}

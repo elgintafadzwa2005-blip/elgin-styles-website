@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elgin Styles — Hair & Beauty</title>
+  <meta name="description" content="Elgin Styles — professional hair styling, colouring, and beauty services.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">Elgin Styles</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Beautiful hair. Confident you.</h1>
+        <p class="lead">Expert styling, personalised care, and modern techniques to make you look and feel your best.</p>
+        <a class="cta" href="#contact">Book a consultation</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <header>
+        <h2>Our Services</h2>
+        <p>From cuts and colours to bridal styling and treatments — tailored to you.</p>
+      </header>
+      <ul class="service-list">
+        <li>
+          <h3>Cut & Styling</h3>
+          <p>Precision cuts and bespoke styling for every occasion.</p>
+        </li>
+        <li>
+          <h3>Colour & Highlights</h3>
+          <p>Modern colouring techniques with colour-safe care advice.</p>
+        </li>
+        <li>
+          <h3>Treatments</h3>
+          <p>Nourishing treatments to restore shine and strength.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="container gallery">
+      <header>
+        <h2>Gallery</h2>
+        <p>Recent work and client transformations.</p>
+      </header>
+      <div class="grid">
+        <figure>
+          <img src="https://via.placeholder.com/400x300?text=Style+1" alt="Example style 1">
+          <figcaption>Classic bob with soft layering</figcaption>
+        </figure>
+        <figure>
+          <img src="https://via.placeholder.com/400x300?text=Style+2" alt="Example style 2">
+          <figcaption>Sun-kissed balayage</figcaption>
+        </figure>
+        <figure>
+          <img src="https://via.placeholder.com/400x300?text=Style+3" alt="Example style 3">
+          <figcaption>Bridal updo</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <header>
+        <h2>Contact & Bookings</h2>
+        <p>Get in touch to arrange your appointment or ask any questions.</p>
+      </header>
+
+      <form class="contact-form" action="https://formspree.io/f/{your-id}" method="POST">
+        <!-- Replace {your-id} with your Formspree form ID -->
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required placeholder="Your full name">
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+
+          <label class="full">
+            <span>Service interested in</span>
+            <select name="service">
+              <option>Cut & Styling</option>
+              <option>Colour & Highlights</option>
+              <option>Treatments</option>
+              <option>Bridal</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label class="full">
+            <span>Message</span>
+            <textarea name="message" rows="6" placeholder="Tell us about what you're after"></textarea>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Send message</button>
+          <small class="hint">By submitting you consent to be contacted regarding your enquiry.</small>
+        </div>
+      </form>
+
+      <address class="clinic-info">
+        <strong>Elgin Styles</strong><br>
+        123 Example Street<br>
+        City, Country<br>
+        <a href="tel:+0000000000">+00 000 0000</a>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Elgin Styles — All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
